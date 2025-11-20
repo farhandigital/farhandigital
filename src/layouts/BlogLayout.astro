@@ -152,16 +152,24 @@ const additionalScripts = [
   // Initialize on page load (works for both direct load and view transitions)
   document.addEventListener("astro:page-load", setThemeFeature);
 
-  // Set theme-color value before page transition
-  // to avoid navigation bar color flickering in Android dark mode
+  // Apply theme to new document BEFORE swap to prevent flash
   document.addEventListener("astro:before-swap", (event) => {
-    const bgColor = document
-      .querySelector("meta[name='theme-color']")
-      ?.getAttribute("content");
-
-    event.newDocument
-      .querySelector("meta[name='theme-color']")
-      ?.setAttribute("content", bgColor);
+    // Update themeValue in case it changed
+    themeValue = getPreferTheme();
+    
+    // Apply theme to the new document before it becomes visible
+    event.newDocument.firstElementChild.setAttribute("data-theme", themeValue);
+    
+    // Set theme-color meta tag to avoid navigation bar color flickering
+    const body = event.newDocument.body;
+    if (body) {
+      const computedStyles = window.getComputedStyle(body);
+      const bgColor = computedStyles.backgroundColor;
+      
+      event.newDocument
+        .querySelector("meta[name='theme-color']")
+        ?.setAttribute("content", bgColor);
+    }
   });
 
   // Sync with system changes
