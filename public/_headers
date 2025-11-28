@@ -7,4 +7,4 @@
 
   Permissions-Policy: browsing-topics=(), geolocation=(), microphone=(), camera=()
   
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cloud.umami.is https://www.statcounter.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: http:; font-src 'self' data:; connect-src 'self' https://cloud.umami.is https://www.statcounter.com https://c.statcounter.com https://static.cloudflareinsights.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cloud.umami.is https://www.statcounter.com https://static.cloudflareinsights.com https://giscus.app; style-src 'self' 'unsafe-inline' https://giscus.app; img-src 'self' data: https: http:; font-src 'self' data:; connect-src 'self' https://cloud.umami.is https://www.statcounter.com https://c.statcounter.com https://static.cloudflareinsights.com https://giscus.app; frame-src https://giscus.app; frame-ancestors 'none'; base-uri 'self'; form-action 'self';
