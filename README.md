@@ -26,7 +26,7 @@ This project merges two previously separate Astro websites:
 
 This project uses **Astro's natural file-based routing** - no complex workarounds or post-build scripts needed!
 
-```
+```text
 src/pages/
 ├── index.astro              → /
 ├── blog/
@@ -44,7 +44,7 @@ src/pages/
 
 ### Project Structure
 
-```
+```text
 farhandigital/
 ├── src/
 │   ├── pages/              # Routes (landing + blog)
@@ -222,16 +222,19 @@ export const SOCIALS = [
 ### Cloudflare Workers (Recommended)
 
 1. Install Wrangler CLI:
+
 ```bash
 bun add -g wrangler
 ```
 
 2. Login to Cloudflare:
+
 ```bash
 wrangler login
 ```
 
 3. Deploy:
+
 ```bash
 bun run build
 wrangler pages deploy dist
@@ -277,7 +280,7 @@ export function getPostPath(post: CollectionEntry<"blog">): string {
 
 ### Build Output
 
-```
+```text
 dist/
 ├── index.html              # Landing page
 ├── logo.png, banner.png    # Landing assets
