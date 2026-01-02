@@ -2,7 +2,6 @@
 author: "Farhan"
 pubDatetime: 2025-11-24T23:44:50.581Z
 title: "What is a Domain Name"
-slug: "what-is-a-domain-name"
 description: "Short introduction about what a domain name is"
 draft: false
 tags: ["website", "domain", "dns", "ip address"]
