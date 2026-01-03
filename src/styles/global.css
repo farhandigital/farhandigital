@@ -64,7 +64,7 @@ html[data-theme="dark"] {
 
   /* Blog body styles (applied via data-section attribute) */
   body[data-section="blog"] {
-    @apply bg-background font-mono text-foreground selection:bg-accent/75 selection:text-background;
+    @apply bg-background font-sans text-foreground selection:bg-accent/75 selection:text-background;
   }
 
   /* Landing page body styles (default) */
