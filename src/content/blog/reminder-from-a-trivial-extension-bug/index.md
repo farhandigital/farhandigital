@@ -1,4 +1,5 @@
 ---
+id: 2
 title: "A Trivial Bug that Reminds Me of the Hard Truth of Being an Extension Developer"
 description: ""
 pubDatetime: 2025-11-24T23:44:50.581Z

@@ -1,4 +1,5 @@
 ---
+id: 1
 author: "Farhan"
 pubDatetime: 2025-11-24T23:44:50.581Z
 title: "What is a Domain Name"
