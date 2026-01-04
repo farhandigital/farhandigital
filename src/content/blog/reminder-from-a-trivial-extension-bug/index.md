@@ -1,11 +1,11 @@
 ---
 id: 2
 title: "A Trivial Bug that Reminds Me of the Hard Truth of Being an Extension Developer"
-description: ""
-pubDatetime: 2025-11-24T23:44:50.581Z
+description: "Find out why being an extension developer is so much different than being a web developer"
+pubDatetime: 2026-01-04T01:27:48Z
 author: "Farhan"
 tags: ["extension", "bug", "lesson"]
-draft: true
+draft: false
 ---
 
 I was testing an extension I've recently built for dev.to. One important feature of the extension is adding tables of contents (ToC) to articles, so that you can easily navigate long articles and see the structure of the article at a glance.
