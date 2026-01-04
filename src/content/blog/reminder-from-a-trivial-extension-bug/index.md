@@ -2,6 +2,7 @@
 id: 2
 title: "A Trivial Bug that Reminds Me of the Hard Truth of Being an Extension Developer"
 description: "Find out why being an extension developer is so much different than being a web developer"
+ogImage: "my-predictions-for-mcp-devtool-html.png"
 pubDatetime: 2026-01-04T01:27:48Z
 author: "Farhan"
 tags: ["extension", "bug", "lesson"]
