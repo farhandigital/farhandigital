@@ -1,6 +1,6 @@
 # Farhan Digital
 
-A unified Astro v5 website combining a professional landing page and a feature-rich blog, deployed as static assets on Cloudflare Workers.
+A unified Astro v6 website combining a professional landing page and a feature-rich blog, deployed as static assets on Cloudflare Workers.
 
 ## 🎯 Project Overview
 
@@ -10,7 +10,7 @@ This project merges two previously separate Astro websites:
 
 ### Key Features
 
-- ⚡ **Astro v5** - Latest framework features and performance
+- ⚡ **Astro v6** - Latest framework features and performance
 - 🎨 **Tailwind CSS v4** - Modern CSS-first configuration
 - 📝 **Content Collections** - Type-safe blog post management
 - 🔍 **Pagefind Search** - Fast client-side search
@@ -301,7 +301,7 @@ dist/
 
 ## 📚 Tech Stack
 
-- **Framework**: [Astro v5](https://astro.build/)
+- **Framework**: [Astro v6](https://astro.build/)
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
 - **Search**: [Pagefind](https://pagefind.app/)
 - **Syntax Highlighting**: [Shiki](https://shiki.style/)
@@ -319,4 +319,4 @@ This is a personal website project. If you find bugs or have suggestions, feel f
 
 ---
 
-Built with ❤️ using Astro v5 and Tailwind CSS v4
+Built with ❤️ using Astro v6 and Tailwind CSS v4
