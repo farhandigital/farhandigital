@@ -1,6 +1,6 @@
 # Farhan Digital
 
-A unified Astro v6 website combining a professional landing page and a feature-rich blog, deployed as static assets on Cloudflare Workers.
+A unified Astro v7 website combining a professional landing page and a feature-rich blog, deployed as static assets on Cloudflare Workers.
 
 ## 🎯 Project Overview
 
