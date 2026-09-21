@@ -2,5 +2,12 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "farhandigital",
   "compatibility_date": "2026-02-24",
-  "pages_build_output_dir": "dist"
+  "pages_build_output_dir": "dist",
+  "vars": {
+    "SKIP_DEPENDENCY_INSTALL": "true",
+    "BUN_VERSION": "1.4.2"
+  },
+  "build": {
+    "command": "bun install && bun run build"
+  }
 }
