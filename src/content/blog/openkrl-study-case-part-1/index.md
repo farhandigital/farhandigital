@@ -2,10 +2,10 @@
 id: 3
 title: "Open KRL Study Case Part 1"
 description: "Study case on how I built a data pipeline to scrape KCI API and export it as GTFS"
-ogImage: "my-predictions-for-mcp-devtool-html.png"
+ogImage: "krl-schedule-map.webp"
 pubDatetime: 2026-09-21T12:26:54Z
 author: "Farhan"
-tags: ["extension", "bug", "lesson"]
+tags: ["scraping", "data pipeline", "gtfs", "krl", "public transport"]
 draft: false
 ---
 
