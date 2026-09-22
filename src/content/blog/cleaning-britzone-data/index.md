@@ -6,7 +6,7 @@ ogImage: "drive-overview.webp"
 pubDatetime: 2026-09-21T12:26:54Z
 author: "Farhan"
 tags: ["data cleaning", "britzone", "google drive"]
-draft: true
+draft: false
 ---
 
 ## Business Context
