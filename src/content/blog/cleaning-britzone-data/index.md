@@ -1,3 +1,14 @@
+---
+id: 4
+title: "Cleaning Britzone Data"
+description: "Cleaning Britzone Data"
+ogImage: "drive-overview.webp"
+pubDatetime: 2026-09-21T12:26:54Z
+author: "Farhan"
+tags: ["data cleaning", "britzone", "google drive"]
+draft: true
+---
+
 ## Business Context
 
 Britzone is one of the largest English Community in indonesia based that has been active since 2003. It conducts 3-5 sessions every week, where participants have to register through Google Forms to attend for every session. Unfortunately, these data are never properly managed, leaving them to pile up over time.
