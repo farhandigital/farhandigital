@@ -32,23 +32,48 @@ User inputs are one of the main sources of data quality issues. Without proper v
 
 Every participant is required to register for every new session, entering the same data again (name, email, phone number). However, these are all self-report with no verification, the participant can practically fill out anything. 
 
-## Cleaning Plan
+## Cleaning Phase
 
-The purpose of the project is to cleanly aggregate every session's registration data. Therefore, the first issue is the most relevant. The second is also relevant as we need to put more efforts in the data cleaning process, but not directly crucial to the project. The third is more of analysis concern. 
+## Filename Cleanup
 
-First, I'll download every year's registration folder. Then, I'll load them up into R
-
-Since 2025 and 2026 is already in a better shape, I'll focus on merging 2020-2024 data. 
+First of all, we need to cleanup the filenames before we clean the files themselves. Also, data below 2023 will be postponed for now since none of us were there at the time. 
 
 ```
-448.8 MiB  britzone-class-registration
-    0   B ├─  EDA.qmd
-448.8 MiB └─  registration-sheets
-446.6 MiB    ├─  2021
-868.0 KiB    ├─  2023
-840.0 KiB    ├─  2022
-584.0 KiB    └─  2024
+1.4 MiB  registration-sheets
+868.0 KiB ├─  2023
+584.0 KiB └─  2024
 
-7 directories, 1167 files
-
+2 directories, 98 files
 ```
+
+2024 data, while stil scattered, is in a reasonably better shape because the dates on the file names reflected the actual date of the event.
+
+![Google Drive Organization](drive-overview.webp)
+
+Whereas in 2025, they sometimes use range instead. I suspect it's the time range of when the form is opened and closed. 
+
+![Drive 2025](drive-2023-registration.webp)
+
+So I wrote a script using chrono and dayjs to verify those dates, and yes they're indeed as I suspected. 
+
+![](script-verify-date.webp)
+
+Though, not all. Some don't have any dates at all in the filename, some have discrepancy between with the actual date of the event.
+
+We can handle that later, for now I moved all the compliant sheets into a separate folder and rename them into ISO date format.
+
+![](cleaned-file-name.webp)
+
+## File merging
+
+Now that the filenames are cleaned up, we can merge the files into a single CSV file. But before that, we need to verify whether the columns actually matched.
+
+For that, I quickly converted all those files to CSV using R and just compare them with eyes. Yeah it's not ideal, but good enough for quick check, as the full discrepancy will be known anyway by the time we merge them together.
+
+![](csv-preview.webp)
+
+Now let's merge them together.
+
+![](merged-csv.webp)
+
+As expected, there's lot of things need to be fixed, but for now, at least the overall shape is in place. Now we can do aggregate analysis on this if needed. 
